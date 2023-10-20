@@ -185,6 +185,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Wall_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3444149e652e33498ce6a3f9b5a5deb
+      internalID: -2136059357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7778f56b71d3bf148aaf6dbf381fe609
+      internalID: 1039365111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -197,8 +239,10 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Atlas_0: -496041561
+      Wall_0: -2136059357
       player_0: 1320488754
       player_1: -653947682
+      wall_1: 1039365111
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -5265,6 +5265,7 @@ MonoBehaviour:
   weaponPrices: 
   xpTable: 
   player: {fileID: 654298649}
+  floatingTextManager: {fileID: 0}
   money: 0
   experience: 0
 --- !u!4 &778614371

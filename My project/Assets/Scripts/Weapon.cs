@@ -2,17 +2,45 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public class Weapon : Collidable
 {
-    // Start is called before the first frame update
-    void Start()
+    // Damage Structure
+    public int damagePoint = 1;
+    public float pushForce = 2.0f;
+
+    //Upgrade
+    public int weaponLevel = 0;
+    private SpriteRenderer spriteRenderer;
+
+    //Swing the weapon
+    private float cooldown = 0.5f;
+    private float lastSwing;
+
+    protected override void Start()
+    {
+        base.Start();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    protected override void Update()
+    {
+        base.Update();
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            if(Time.time - lastSwing > cooldown)
+            {
+                lastSwing = Time.time;
+                Swing();
+            }
+        }
+    }
+
+    protected override void OnCollide(Collider2D coll)
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Swing()
     {
-        
+        Debug.Log("Swing");
     }
 }
